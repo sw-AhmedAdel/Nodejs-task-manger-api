@@ -57,7 +57,7 @@ describe('Test tasks' , () => {
   })
 
  
-  describe('test get user all tasks' , () => {
+  describe('test delete task by not authenticate user ' , () => {
     test('it should responde with 200 success' , async () => {
     const response = await request(app)
     .delete(`/v1/tasks/${taskOne._id}`)
